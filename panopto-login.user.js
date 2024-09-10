@@ -6,8 +6,8 @@
 // @author       Mike
 // @match        https://login.panopto.com/*
 // @match        https://dsu.hosted.panopto.com/Panopto/Pages/Auth/Login.aspx*
-// @updateURL    https://raw.githubusercontent.com/DSUmjham/userscripts/main/panopto-login.user.js
-// @downloadURL  https://raw.githubusercontent.com/DSUmjham/userscripts/main/panopto-login.user.js
+// @updateURL    https://raw.githubusercontent.com/DSUmjham/userscripts/main/panopto-login.js
+// @downloadURL  https://raw.githubusercontent.com/DSUmjham/userscripts/main/panopto-login.js
 // @grant        none
 // ==/UserScript== 
 
