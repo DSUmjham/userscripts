@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Panopto Login
 // @namespace    http://github.com/DSUmjham 
-// @version      0.1
+// @version      0.2
 // @description  Automatically fill in DSU email address and procede to ADFS when prompted with the Panopto redirect page
 // @author       Mike
 // @match        https://login.panopto.com/*
