@@ -9,7 +9,7 @@
 // @updateURL    https://raw.githubusercontent.com/DSUmjham/userscripts/main/panopto-login.js
 // @downloadURL  https://raw.githubusercontent.com/DSUmjham/userscripts/main/panopto-login.js
 // @grant        none
-// ==/UserScript==
+// ==/UserScript== 
 
 (function() {
     'use strict';
