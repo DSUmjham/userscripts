@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Automatically check the box for "I agree to use electronic records and signatures"
 // @author       Mike Ham
-// @match        https://www.docusign.net/Signing/?ti=*
+// @match        https://*.docusign.net/Signing/?ti=*
 // @updateURL    https://raw.githubusercontent.com/DSUmjham/userscripts/main/docusign-esig-accept.js
 // @downloadURL  https://raw.githubusercontent.com/DSUmjham/userscripts/main/docusign-esig-accept.js
 // @grant        none
