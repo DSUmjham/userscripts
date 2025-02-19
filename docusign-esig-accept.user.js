@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Docusign Electronic Record and Signature Disclosure
 // @namespace    http://github.com/DSUmjham
-// @version      0.1
+// @version      0.2
 // @description  Automatically check the box for "I agree to use electronic records and signatures"
 // @author       Mike Ham
 // @match        https://*.docusign.net/Signing/?ti=*
@@ -34,21 +34,21 @@
   }
 
   // Wait for the checkbox to exist, then click it
-  waitForElement('input[type="checkbox"].css-mvulh6', (checkbox) => {
+  waitForElement('[data-qa="ersd-agree-checkbox"]', (checkbox) => {
     checkbox.click(); // Simulate real click
     checkbox.dispatchEvent(new Event("change", { bubbles: true })); // Ensure it registers
 
-    // Now wait for the button and click it
-    waitForElement(
-      'button[data-qa="ersd-modal-agree"]',
-      (button) => {
-        if (!button.disabled) {
-          button.click();
-        } else {
-          console.warn("Button is disabled.");
-        }
-      },
-      500
-    );
+  // Now wait for the button and click it
+  setTimeout(() => {
+    waitForElement('[data-qa="ersd-modal-agree"]', (button) => {
+      console.log("Continue button found.");
+      if (!button.disabled) {
+        button.click();
+        console.log("Clicked Continue button.");
+      } else {
+        console.warn("Button is disabled.");
+      }
+    }, 500);
+  }, 500); 
   });
 })();
